@@ -1,4 +1,4 @@
-ul, li, h1 {
+ul, li, h1, h2 {
 	padding: 0;
 	margin: 0;
 	text-decoration: none;
@@ -11,13 +11,11 @@ body:after {
 	content: "";
 	clear: both;
 }
-.card {
 
-	width: 50px;
-	height: 50px;
-	/*width: 100px;
-	height: 160px;*/
-	border: 1px solid black;
+.card {
+	width: 80px;
+	height: 120px;
+	border: 2px solid black;
 	float: left;
 	margin: 10px;
 	display: flex;
@@ -25,8 +23,38 @@ body:after {
 	align-items: center;
 }
 
-.disable-click {
-	cursor: none;
+.card:hover {
+	border-color: red;
 }
 
+.card.selected-green {
+	background-color: green;
+	opacity: 0.5;
+}
 
+.card.selected-yellow {
+	background-color: yellow;
+	opacity: 0.5;
+}
+
+.disable-click {
+	pointer-events: none;
+}
+
+.card-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.suit {
+	height: 50%;
+	width: 50%;
+	margin: 10px;
+}
+
+.card-back {
+	height: 100%;
+	width: 100%;
+}
