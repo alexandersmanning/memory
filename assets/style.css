@@ -3,10 +3,8 @@ body, ul, li, h1, h2, h3, h4 {
 	margin: 0;
 	text-decoration: none;
 	list-style: none;
-}
-
-body {
-	/*background-image: url("images/mat.jpg")*/
+	font-family: "europa", sans-serif;
+	font-size: 20px;
 }
 
 body:after {
@@ -53,12 +51,17 @@ body:after {
 #scores-by-player div {
 	display: flex;
 	flex-direction: row;
-	font-size: 20px;
+}
+
+#game-status {
+	display: block;
+	text-align: center;
+	height: 30px;
+	color: red;
 }
 
 h4 {
 	margin-left: 5px;
-	font-size: 20px;
 	font-weight: 400;
 }
 
@@ -69,6 +72,7 @@ h4 {
 
 #new-game {
 	cursor: pointer;
+}
 }
 
 .button-container {
@@ -133,11 +137,12 @@ h4 {
 .card.selected-green {
 	background-color: green;
 	color: white;
-	/*opacity: 0.5;*/
+	opacity: 0.5;
 }
 
 .card.selected-yellow {
 	background-color: yellow;
+	opacity: 0.5;
 }
 
 .disable-click {
