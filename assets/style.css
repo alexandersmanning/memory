@@ -5,22 +5,56 @@ ul, li, h1, h2 {
 	list-style: none;
 }
 
-
 body:after {
 	display: block;
 	content: "";
 	clear: both;
 }
 
+.main-navigation {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	position: relative;
+}
+
+.new-game-container {
+	cursor: pointer;
+}
+
+.button-container {
+	display: none;
+}
+
+.new-game-container:hover>.button-container {
+	display: block;
+	position: absolute;
+	background-color: white;
+	border: 1px solid lightgrey;
+	border-radius: 2%;
+	top: 25px;
+	z-index: 1000;
+}
+
+.button {
+	margin: 10px;
+	border-bottom: 1px solid white;
+}
+
+.button:hover {
+	border-bottom: 1px solid red;
+}
+
 .card {
 	width: 80px;
 	height: 120px;
-	border: 2px solid black;
+	border: 2px solid lightgrey;
 	float: left;
 	margin: 10px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-radius: 3%;
 }
 
 .card:hover {

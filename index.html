@@ -3,10 +3,21 @@
 <head>
 	<script type="text/javascript" src="lib/bundle.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="icon" href="assets/images/card_club.png">
 	<title>Memory by Alex Manning</title>
 </head>
 <body>
-	<h1>Memory!</h1>
+	<nav class="main-navigation">
+		<h1>Memory</h1>
+		<div class="new-game-container">
+			New Game
+			<content class="button-container">
+				<div class="button" id="1p">Single Player Game</div>
+				<div class="button" id="1pv1p">Two Player Game</div>
+				<div class="button" id="1pv1c">Single Player vs. Computer</div>
+			</content>
+		</div>
+	</nav>
 	<ul id="board"></ul>
 </body>
 </html>
