@@ -1,4 +1,4 @@
-ul, li, h1, h2 {
+body, ul, li, h1, h2 {
 	padding: 0;
 	margin: 0;
 	text-decoration: none;
@@ -11,14 +11,25 @@ body:after {
 	clear: both;
 }
 
+.title {
+	font-size: 3vh;
+}
+
 .main-navigation {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
 	position: relative;
+	height: 5vh;
+	margin-bottom: 2vh;
+	align-items: center;
+	
+	-webkit-box-shadow: 0 8px 6px -6px lightgrey;
+  -moz-box-shadow: 0 8px 6px -6px lightgrey;
+  box-shadow: 0 8px 6px -6px lightgrey;
 }
 
-.new-game-container {
+#new-game {
 	cursor: pointer;
 }
 
@@ -26,19 +37,39 @@ body:after {
 	display: none;
 }
 
-.new-game-container:hover>.button-container {
-	display: block;
+#button-modal {
+	position: relative;
+
+}
+
+#button-modal.hidden {
+	display: none;
+}
+
+.button-container {
+	display: flex;
 	position: absolute;
+	top: 25vh;
+	bottom: 50px;
+	right: 50px;
+	left: 50px;
 	background-color: white;
-	border: 1px solid lightgrey;
-	border-radius: 2%;
-	top: 25px;
 	z-index: 1000;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#board {
+	max-width: 1400px;
+	margin: auto;
 }
 
 .button {
+	cursor: pointer;
 	margin: 10px;
 	border-bottom: 1px solid white;
+	font-size: 3vh;
 }
 
 .button:hover {
