@@ -5,6 +5,9 @@ Play the live version here:
 [Memory live][github]
 [github]: http://www.alexandersmanning.com/memory/
 
+
+![main screen](assets/images/Memory.png)
+
 ## Features
 
 ### Card Matching
